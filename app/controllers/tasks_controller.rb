@@ -14,7 +14,7 @@ class TasksController < ApplicationController
 
   def create
     Task.create!(params_task)
-    redirect_to task_path(task)
+    redirect_to task_path([:id])
   end
 
   def edit
